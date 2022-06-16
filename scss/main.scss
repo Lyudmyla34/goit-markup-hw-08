@@ -1,0 +1,26 @@
+//utils//
+@import'./utils/vars';
+@import'./utils/visually-hidden';
+
+//base styles//
+@import'./base/common';
+@import'./base/resset';
+@import'./base/container';
+@import'./base/section';
+
+//components
+@import'components/logo';
+@import'components/social-icon';
+@import'components/modal-window';
+@import'components/forms';
+@import'components/filtrs';
+
+
+//layouts
+@import'layouts/header';
+@import'layouts/hero';
+@import'layouts/features';
+@import'layouts/team';
+@import'layouts/clients';
+@import'layouts/footer';
+@import'layouts/card';

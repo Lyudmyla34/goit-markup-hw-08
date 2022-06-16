@@ -1,0 +1,11 @@
+body {
+    align-items: center;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 14px;
+    color: var(--primary-text-color);
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}

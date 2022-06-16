@@ -1,0 +1,13 @@
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list:hover .list:focus {
+    color: var(--accent-colorw);
+}

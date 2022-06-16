@@ -1,0 +1,31 @@
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: var(--accent-color);
+}
+
+.logo__head {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+.logo__accent {
+    color: var(--primary-text-second-color);
+}
+
+.logo__bottom {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo__bottom--accent {
+    color: var(--background-color);
+}
