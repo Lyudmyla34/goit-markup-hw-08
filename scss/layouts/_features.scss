@@ -17,9 +17,7 @@ display: flex;
     margin-right: 0;
   }
 }
-
 /*заголовки*/
-
 .advantage {
   text-align: center;
    margin-top: 0;
@@ -36,8 +34,7 @@ display: flex;
   
   &__description {
         margin-top: 0;
-    margin-bottom: 0;
-    width: 100%;
+    margin-bottom: 30px;    
 
     font-family: inherit;
     font-weight: 400;
