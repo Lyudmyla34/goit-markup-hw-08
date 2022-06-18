@@ -73,17 +73,52 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin: auto;
+@media scrin and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media scrin and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media scrin and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media scrin and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: auto;
+  }
+}
+
+@media scrin and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: auto;
+  }
+}
+
+@media scrin and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin: auto;
+  }
 }
 
 .section--background {
@@ -1002,17 +1037,24 @@ body {
 
 .features__item {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0px 0px;
 }
 
-.features__list--position {
-  margin-right: 30px;
+@media scrin and (min-width: 1200px) {
+  .features__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media scrin and (min-width: 1200px) {
+  .features__list--position {
+    margin-right: 30px;
+  }
 }
 
 .features__list--position:last-child {
@@ -1021,6 +1063,7 @@ body {
 
 /*заголовки*/
 .advantage {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
   font-family: 'Roboto';
@@ -1035,7 +1078,7 @@ body {
 .advantage__description {
   margin-top: 0;
   margin-bottom: 0;
-  width: 270px;
+  width: 100%;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -1043,6 +1086,12 @@ body {
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+@media scrin and (min-width: 1200px) {
+  .advantage__description {
+    width: 270px;
+  }
 }
 
 /*абзац особливостей*/

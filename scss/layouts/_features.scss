@@ -1,12 +1,17 @@
 .features__item {
-  padding: 0;
-  display: flex;
+  padding: 0;  
   align-items: center;
   margin: 0px 0px;
+
+  @media scrin and (min-width: 1200px) {
+display: flex;
+  }
 }
 
 .features__list--position {
-  margin-right: 30px;
+
+  @media scrin and (min-width: 1200px){
+    margin-right: 30px;}
 
   &:last-child {
     margin-right: 0;
@@ -16,7 +21,8 @@
 /*заголовки*/
 
 .advantage {
-  margin-top: 0;
+  text-align: center;
+   margin-top: 0;
   margin-bottom: 10px;
 
   font-family: 'Roboto';
@@ -27,11 +33,11 @@
   text-transform: uppercase;
 
   color: var(--primary-text-second-color);
-
+  
   &__description {
-    margin-top: 0;
+        margin-top: 0;
     margin-bottom: 0;
-    width: 270px;
+    width: 100%;
 
     font-family: inherit;
     font-weight: 400;
@@ -42,7 +48,13 @@
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
+
+    @media scrin and (min-width: 1200px)
+  {
+    width: 270px;
   }
+  }
+ 
 }
 
 /*абзац особливостей*/
@@ -61,6 +73,10 @@
   width: 70px;
   height: 70px;
 }
+
+
+
+
 
 /*чим займаємося*/
 .section__container {
