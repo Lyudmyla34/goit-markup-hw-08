@@ -79,21 +79,21 @@ body {
   margin-left: auto;
 }
 
-@media scrin and (min-width: 480px) {
+@media (min-width: 1200px) {
   .container {
-    width: 480px;
+    width: 1200px;
   }
 }
 
-@media scrin and (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
 
-@media scrin and (min-width: 1200px) {
+@media (min-width: 480px) {
   .container {
-    width: 1200px;
+    width: 480px;
   }
 }
 
@@ -1037,28 +1037,24 @@ body {
 
 .features__item {
   padding: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0px 0px;
 }
 
-@media scrin and (min-width: 1200px) {
-  .features__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
-@media scrin and (min-width: 1200px) {
-  .features__list--position {
+@media screen and (min-width: 768px) {
+  .features__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 2);
+        flex-basis: calc((100% - 3 * 30px) / 2);
     margin-right: 30px;
   }
 }
 
-.features__list--position:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .features__list {
+    width: calc(100%-3*30)/4;
+    margin: -15px;
+  }
 }
 
 /*заголовки*/
@@ -1076,8 +1072,6 @@ body {
 }
 
 .advantage__description {
-  margin-top: 0;
-  margin-bottom: 30px;
   font-family: inherit;
   font-weight: 400;
   font-size: 14px;
@@ -1087,9 +1081,10 @@ body {
   color: var(--primary-text-color);
 }
 
-@media scrin and (min-width: 1200px) {
+@media screen and (max-width: 766px) {
   .advantage__description {
-    width: 270px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -1224,6 +1219,16 @@ body {
 
 .team__item:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 1198px) {
+  .team__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 2);
+        flex-basis: calc((100% - 3 * 30px) / 2);
+    margin-right: 30px;
+  }
 }
 
 .team__photo {
