@@ -9,7 +9,7 @@
   @media screen and(min-width:768px), (max-width: 1198px) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+   
   }
 }
 
@@ -128,6 +128,8 @@
 }
 
 .product__text {
+  @media screen and (max-width:1198px){
+    display: none;}
   display: flex;
   justify-content: center;
   align-items: center;
