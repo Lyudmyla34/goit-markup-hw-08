@@ -84,9 +84,13 @@
 /*чим займаємося*/
 .section__container {
   padding-top: 0;
-}
+ }
+ @media screen and (max-width:1198px){
+  .section__container{
+  display: none;}
+ }
 
-.heading {
+.heading {  
   margin-top: 0;
   margin-bottom: 50px;
 
