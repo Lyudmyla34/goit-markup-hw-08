@@ -19,10 +19,20 @@
   </head>
   <body>
     <!-- Шапка сторінки-->
-   <!--  <header class="header header-line">
+     <header class="header header-line">
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo logo__head link" href="./index.html" lang="en">Web<span class="logo__accent">Studio</span></a>
+           <button type="button" 
+       class="btn-mobail is-open"
+      aria-expanded="false"
+      aria-label="mobail-menu"     
+        data-menu-button>
+          <svg class="btn-mobail__list" width="40" height="40" aria-label="Переключатель мобильного меню">            
+             <use  class="btn-mobail__close" href="./images/symbol-de.svg#icon-close_40px"></use>
+             <use class="btn-mobail__menu" href="./images/symbol-de.svg#icon-menu_40px"></use>
+          </svg>
+        </button>        
           <ul class="list navigation__item">
             <li class="navigation__list">
               <a class="navigation__studio link line" href="./index.html">Студия </a>
@@ -49,8 +59,25 @@
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/symbol-defs2.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
-        </ul>
-      </div>
+        </ul>        
+      </div>     
+        <div class="mobail-menu" id="mobail-menu" data-menu>
+      <ul class="mobail-menu__nav is-hidden">
+        <li class="mobail-menu__item list"> <a href="./index.html" class="mobail-menu__link link">Студия</a></li>
+        <li class="mobail-menu__item list"> <a href="./portfolio.html" class="mobail-menu__link link">Портфолио</a></li>
+        <li class="mobail-menu__item list"> <a href="" class="mobail-menu__link link">Контакты</a></li>
+      </ul>
+      <ul class="contact-menu">
+        <li class="contact-menu__item list"> <a href="tel:+380961111111" class="contact-menu__link link">+38 096 111 11 11</a></li>
+        <li class="contact-menu__item list"> <a href="mailto:info@devstudio.com" class="contact-menu__link-mail link">info@devstudio.com</a></li>        
+      </ul>
+      <ul class="social-menu">
+        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Instagram </a> <span class="social-menu__point">|</span></li>
+        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Twitter</a> <span class="social-menu__point">|</span></li>
+        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Facebook</a> <span class="social-menu__point">|</span></li>
+         <li class="social-menu__item list"> <a href="" class="social-menu__link link">LinkedIn</a></li>
+      </ul>
+    </div>
     </header>
     <!--Герой-->
    <!--  <main>
@@ -314,7 +341,7 @@
       </section>
     </main>
     <!--нижній колонтитул-->
-   <!--  <footer class="page-footer">
+   <!-- <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="page-footer__pane">
           <a class="logo logo__bottom link" href="./index.html" lang="en">Web<span class="logo logo__bottom--accent">Studio</span></a>
@@ -418,6 +445,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>  
+    <script src="./js/menu.js"></script>     
   </body>
 </html>

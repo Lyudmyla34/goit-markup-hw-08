@@ -1,10 +1,13 @@
+.header{
+  
+}
 .information-nav.studio {
   color: var(--accent-color);
 }
 
 .navigation {
   display: flex;
-  align-items: center;
+  align-items: center;   
 }
 
 .list.navigation__item {
@@ -14,6 +17,9 @@
 
 .navigation__item {
   display: flex;
+  
+@media screen and(max-width:767px) {
+    display: none;}
 }
 
 .navigation__list {
@@ -113,6 +119,9 @@
 }
 
 .contacts {
+  @media screen and(max-width:767px) {
+      display: none;
+    }
   margin: auto;
 
   display: flex;

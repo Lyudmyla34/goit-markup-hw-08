@@ -6,7 +6,8 @@
 
 .page-footer__container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+ 
 }
 
 .page-footer-address {

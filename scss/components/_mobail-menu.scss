@@ -1,0 +1,128 @@
+.btn-mobail {
+  display: inline-flex; 
+  padding: 0;
+  background-color: var(--background-color);
+ border: none;
+
+ 
+}
+
+.btn-mobail .btn-mobail__close {
+  display: none;
+}
+.btn-mobail.is-open .btn-mobail__close {
+  display: block;
+}
+.btn-mobail.is-open .btn-mobail__menu {
+  display: none;
+}
+.mobail-menu {
+  display: none;  
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;      
+      display: flex;
+      flex-direction: column;
+
+    background-color: var(--background-color);
+  }
+
+  &.is-open{
+    display: block;
+  }
+
+.mobail-menu__nav {
+  margin: 0;
+}
+.mobail-menu__item {
+  margin-bottom: 32px;
+}
+.mobail-menu__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-second-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    color: var(--accent-color);
+  }
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+.contact-menu {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.contact-menu__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &:last-child {
+    margin-bottom: 64px;
+  }
+}
+.contact-menu__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.contact-menu__link-mail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.social-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.social-menu__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-menu__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.social-menu__point {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
+}
