@@ -23,16 +23,14 @@
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo logo__head link" href="./index.html" lang="en">Web<span class="logo__accent">Studio</span></a>
-           <button type="button" 
-       class="btn-mobail is-open"
+         <button type="button" 
+       class="menu-toggle .js-open-menu"
       aria-expanded="false"
-      aria-label="mobail-menu"     
-        data-menu-button>
-          <svg class="btn-mobail__list" width="40" height="40" aria-label="Переключатель мобильного меню">            
-             <use  class="btn-mobail__close" href="./images/symbol-de.svg#icon-close_40px"></use>
+      aria-controls="mobile-menu">
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">            
              <use class="btn-mobail__menu" href="./images/symbol-de.svg#icon-menu_40px"></use>
           </svg>
-        </button>        
+        </button>      
           <ul class="list navigation__item">
             <li class="navigation__list">
               <a class="navigation__studio link line" href="./index.html">Студия </a>
@@ -48,7 +46,7 @@
         <ul class="list contacts">
           <li class="contacts__list">
             <a class="contacts__mail link" href="info@devstudio.com">
-              <svg class="contacts__icon" width="16" height="12">
+              <svg class="contacts__icon--mail" width="14" height="10">
                 <use href="./images/symbol-defs2.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com
@@ -56,13 +54,18 @@
           </li>
           <li class="contacts__list">
             <a class="contacts__telefon link" href="tel:0961111111">
-              <svg class="contacts__icon" width="10" height="16">
+              <svg class="contacts__icon" width="10" height="14">
                 <use href="./images/symbol-defs2.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
           </li>
         </ul>        
       </div>     
-        <div class="mobail-menu" id="mobail-menu" data-menu>
-      <ul class="mobail-menu__nav is-hidden">
+       <div class="mobile-menu  .js-menu-container" id="mobile-menu">
+        <button type="button" class="menu-toggle .js-close-menu">       
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">            
+             <use  class="btn-mobail__close" href="./images/symbol-de.svg#icon-close_40px"></use>             
+          </svg>
+        </button>      
+      <ul class="mobail-menu__nav">
         <li class="mobail-menu__item list"> <a href="./index.html" class="mobail-menu__link link">Студия</a></li>
         <li class="mobail-menu__item list"> <a href="./portfolio.html" class="mobail-menu__link link">Портфолио</a></li>
         <li class="mobail-menu__item list"> <a href="" class="mobail-menu__link link">Контакты</a></li>
@@ -80,7 +83,7 @@
     </div>
     </header>
     <!--Герой-->
-   <!--  <main>
+    <!-- <main>
       <section class="section section--background">
         <div class="container hero hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -446,6 +449,13 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>  
-    <script src="./js/menu.js"></script>     
+    <script src="/js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>     
   </body>
 </html>

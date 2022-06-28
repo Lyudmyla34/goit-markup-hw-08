@@ -11,10 +11,14 @@
     color: var(--accent-color);
 }
 
-.logo__head {
+.logo__head {    
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
+    @media screen and(min-width:767px) and(max-width:1198px){
+    margin-right: 88px;}
+        @media screen and(min-width:1200px)
+        {margin-right: 93px;
+        }
 }
 
 .logo__accent {
