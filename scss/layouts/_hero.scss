@@ -5,19 +5,44 @@
 }
 
 .hero__title {
-    margin: 0 auto;
-    max-width: 696px;
-    margin-top: 0;
-    margin-bottom: 30px;
-
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    /* or 136% */
+    font-size: 26px;
+    line-height: 1.61;
+    /* or 162% */
 
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-color);
+    margin: 0 auto;
+    max-width: 360px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+
+.section--background {
+    padding: 118px 0 118px;
+    background: var(--background-second-color);
+    height: auto;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/comanda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }

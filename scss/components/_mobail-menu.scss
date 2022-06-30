@@ -1,8 +1,10 @@
 .menu-toggle {
+  position: absolute;
   display: inline-flex;
   margin: 0;
   padding: 0;
   top: 0;
+  right: 0;
   background-color: var(--background-color);
   border: none;
   @media screen and(min-width:768px){
@@ -11,6 +13,7 @@ display: none;
 }
 
 .mobail-menu { 
+  position: absolute;
  top:0;
  width: 100%;
   display: flex;

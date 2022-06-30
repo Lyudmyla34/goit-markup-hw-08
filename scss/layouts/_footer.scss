@@ -1,22 +1,35 @@
 .page-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background: var(--background-second-color);
+  padding: 60px 15px; 
+  background: var(--background-second-color);  
+  
 }
 
 .page-footer__container {
   display: flex;
-  flex-wrap: wrap;
- 
-}
+  flex-direction: column;
+  @media screen and(min-width:768px){
+    flex-direction:row ;
+  justify-content: center; }  
+    @media screen and(min-width:1200px){
 
+      //flex-wrap: nowrap;
+    }
+}
+.page-footer__pane{
+margin-bottom: 60px;
+    @media screen and(min-width:1200px){
+      margin-bottom: 0;
+    }
+}
 .page-footer-address {
-  margin-right: 70px;
+  @media screen and(min-width:768px) and (max-width: 1198px) {}
+
+  @media screen and(min-width:1200px) {
+  margin-right: 70px;}
 }
 
 .page-footer-address__list {
-  margin: 0;
-  padding: 0;
+ 
 
   font-family: 'Roboto';
   font-style: normal;
@@ -29,15 +42,26 @@
 
   color: var(--background-color);
   list-style: none;
+  padding-inline-start: 0;
+@media screen and(min-width:768px) and (max-width: 1198px) {}
+
+  @media screen and(min-width:1200px){
+  margin: 0;
+    padding: 0;}
 }
 
 .page-footer-address__name {
+  text-align: center;
+  @media screen and(min-width:768px) and (max-width: 1198px) {}
+
+    @media screen and(min-width:1200px){
+      text-align: start;
   margin-bottom: 9px;
 
   &:last-child {
     margin-bottom: 0;
   }
-}
+}}
 
 .page-footer-address__mail {
   font-family: 'Roboto';
@@ -56,8 +80,12 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+    text-align: center;
+    @media screen and(min-width:768px) and (max-width: 1198px) {}
+    
+      @media screen and(min-width:1200px){
   }
-}
+}}
 
 .page-footer-address__phone {
   font-family: 'Roboto';
@@ -78,4 +106,32 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+.accede {
+  margin-bottom: 60px;
+  @media screen and(min-width:1200px){
+    margin-bottom: 0;
+  margin-right: auto;
+}}
+
+.accede__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+  text-align: center;
+  
+    @media screen and(min-width:768px) and (max-width: 1198px) {}
+  
+    @media screen and(min-width:1200px) {
+text-align: start;
+    }
 }

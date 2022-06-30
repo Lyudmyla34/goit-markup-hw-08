@@ -4,18 +4,35 @@
   &__buttons {
     padding: 0;
     margin: 0;
-    margin-bottom: 56px;
+    margin-bottom: 30px;
     display: flex;
+    justify-content: center;
+
+    @media screen and(min-width:768px) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and(min-width:1200px) {
+      margin-bottom: 56px;
+    }
+  }
+}
+
+.services__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px 8px;
+
+  @media screen and(min-width:768px) {
+    flex-wrap: nowrap;
     justify-content: center;
   }
 }
 
 .buttons-portfolio {
   border: none;
-  padding-top: 6px;
-  padding-right: 22px;
-  padding-bottom: 6px;
-  padding-left: 22px;
+  padding: 6px 22px 6px 22px;
 
   color: var(--primary-text-second-color);
   background: #f5f4fa;
@@ -47,8 +64,6 @@
 }
 
 .buttons-list {
-  margin-right: 8px;
-
   &:last-child {
     margin-right: 0;
   }

@@ -27,8 +27,11 @@
 
 .logo__bottom {
     display: block;
+    text-align: center;
+    @media screen and(min-width:1200px){
+        text-align: start;
     margin-bottom: 20px;
-}
+}}
 
 .logo__bottom--accent {
     color: var(--background-color);
