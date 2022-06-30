@@ -193,6 +193,12 @@
 }
 
 //підписка на розсилку
+.subscribe{
+  display: block;
+  justify-content: center;
+  @media screen and(min-width:1200px){
+  margin-left: auto;}
+}
 .subscribe__text {
   margin-top: 0;
   margin-bottom: 31px;
@@ -215,25 +221,23 @@
 }
 
 .subscribe__mode {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;  
+    justify-content: center;
   @media screen and(min-width:768px) and (max-width: 1198px){
     
   }
   @media screen and (min-width: 1200px){  
-flex-wrap: nowrap;
+    display: flex;;
 justify-content: start;}
 }
 
 .subscribe__input {
+  width: 100%;
+  max-width: 450px;
   align-items: center;
   outline: transparent;
  margin-bottom: 20px;
   padding: 15px 16px;
-  box-sizing: border-box;
-
-  max-width: 450px;
+  box-sizing: border-box;  
   height: 50px;
   letter-spacing: 0.03em;
 
