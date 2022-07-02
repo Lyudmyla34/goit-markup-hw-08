@@ -23,6 +23,7 @@
 }
 .btn-mobail__close
 .btn-mobail__menu{
+  fill: var(--primary-text-color);
   &:focus {
       fill: var(--accent-color);
     }
