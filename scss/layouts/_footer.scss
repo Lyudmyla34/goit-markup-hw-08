@@ -132,10 +132,8 @@ margin-bottom: 60px;
   text-transform: uppercase;
 
   color: var(--background-color);
-  text-align: center;
-  
-    @media screen and(min-width:768px) and (max-width: 1198px) {}
-  
+  text-align: center;  
+   
     @media screen and(min-width:1200px) {
 text-align: start;
     }
