@@ -786,6 +786,7 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--primary-text-second-color);
 }
 .menu-toggle:focus {
   fill: var(--accent-color);
