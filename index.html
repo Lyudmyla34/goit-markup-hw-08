@@ -140,15 +140,27 @@
           <h2 class="heading">Чем мы занимаемся</h2>
           <ul class="product">
             <li class="product__list">
-              <img class="product__img" src="./images/img.jpg" alt="Набор текста на компе" width="370" />
+              <img class="product__img"
+              srcset="./images/img/desctop-img.jpg 1600w, 
+              ./images/img/desctop-img@2x.jpg 1600w "
+               src="./images/img.jpg" alt="Набор текста на компе" width="370" 
+               sizes="(min-width: 1200) 33vw, 100vw"/>
               <p class="product__text">Десктопные приложения</p>
             </li>
             <li class="product__list">
-              <img class="product__img" src="./images/img-1.jpg" alt="Связь телефона с комп" width="370" />
+              <img class="product__img" 
+               srcset="./images/img/mobile-img.jpg 1600w, 
+              ./images/img/mobile-img@2x.jpg 1600w "
+               src="./images/img-1.jpg" alt="Связь телефона с комп" width="370"
+               sizes="(min-width: 1200) 33vw, 100vw" />
               <p class="product__text">Мобильные приложения</p>
             </li>
             <li class="product__list">
-              <img class="product__img" src="./images/img-2.jpg" alt="связь с планшетом" width="370" />
+              <img class="product__img"
+              srcset="./images/img/disaine-img.jpg 1600w, 
+              ./images/img/disaine-img@2x.jpg 1600w "
+               src="./images/img-2.jpg" alt="связь с планшетом" width="370"
+               sizes="(min-width: 1200) 33vw, 100vw" />
               <p class="product__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -159,7 +171,15 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img class="team__photo" src="./images/Игорь.jpg" alt="Игорь Демьяненко" width="100%" height="260" />
+              <img class="team__photo"
+              srcset="./images/img/Igor-img480.jpg 480w, 
+              ./images/img/Igor-img480@2x.jpg 480w,
+              ./images/img/Igor-img760.jpg 768w, 
+              ./images/img/Igor-img760@2x.jpg 768w,
+              ./images/img/Igor-img1600.jpg 1200w, 
+              ./images/img/Igor-img1600@2x.jpg 1200w,"
+               src="./images/Игорь.jpg" alt="Игорь Демьяненко" width="100%"
+               sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw"/>
               <div class="team__content">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__occupation" lang="en">Product Designer</p>
@@ -192,7 +212,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__photo" src="./images/Ольга.jpg" alt="Ольга Репина" width="100%" height="260" />
+              <img class="team__photo" 
+               srcset="./images/img/Olga-img480.jpg 480w, 
+              ./images/img/Olga-img480@2x.jpg 480w,
+              ./images/img/Olga-img768.jpg 768w, 
+              ./images/img/Olga-img768@2x.jpg 768w,
+              ./images/img/Olga-img1600.jpg 1200w, 
+              ./images/img/Olga-img1600@2x.jpg 1200w, "
+              src="./images/Ольга.jpg" alt="Ольга Репина" width="100%"
+               sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw" />
               <div class="team__content">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__occupation" lang="en">Frontend Developer</p>
@@ -225,7 +253,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__photo" src="./images/Николай.jpg" alt="Николай Тарасов" width="100%" height="260" />
+              <img class="team__photo"
+              srcset="./images/img/Mykola-img480.jpg 480w, 
+              ./images/img/Mykola-img480@2x.jpg 480w,
+              ./images/img/Mykola-img768.jpg 768w, 
+              ./images/img/Mykola-img768@2x.jpg 768w,
+              ./images/img/Mykola-img1600.jpg 1200w, 
+              ./images/img/Mykola-img1600@2x.jpg 1200w, "
+               src="./images/Николай.jpg" alt="Николай Тарасов" width="100%" 
+               sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw"/>
               <div class="team__content">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__occupation" lang="en">Marketing</p>
@@ -258,7 +294,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__photo" src="./images/Михаил.jpg" alt="Михаил Ермаков" width="100%" height="260" />
+              <img class="team__photo"
+              srcset="./images/img/Myhailo-img480.jpg 480w, 
+              ./images/img/Myhailo-img480@2x.jpg 480w,
+              ./images/img/Myhailo-img768.jpg 768w, 
+              ./images/img/Myhailo-img768@2x.jpg 768w,
+              ./images/img/Myhailo-img1600.jpg 1200w, 
+              ./images/img/Myhailo-img1600@2x.jpg 1200w, "
+               src="./images/Михаил.jpg" alt="Михаил Ермаков" width="100%"
+               sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 100vw"/>
               <div class="team__content">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__occupation" lang="en">UI Designer</p>
