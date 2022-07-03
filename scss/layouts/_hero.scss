@@ -36,12 +36,15 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(..//images/img/Header-img480.jpg),
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/img/Header-img480.jpg),
     url(../images/img/Header-img480@2x.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  @media screen and(min-width:730px){
+  @media screen and(min-width:730px) {
     background-image: url(..//images/img/Header-img768.jpg), url(../images/img/Header-img768@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   @media screen and (min-width: 1200px) {
     height: 600px;
@@ -49,8 +52,6 @@
     padding-bottom: 200px;
     background-image: url(..//images/img/Header-img1600.jpg);
     background-image: url(../images/img/Header-img1600@2x.jpg);
-}
-
- 
+    background-position: center;
   }
-
+}
