@@ -209,12 +209,14 @@
  
   letter-spacing: 0.03em;
   color: var(--background-color);
-  text-align: center;
+  @media screen and (max-width: 1198px){
+  text-align: center;}
 
   @media screen and (min-width: 1200px){
     margin-top: 0;
     margin-bottom: 20px;}
-    justify-content: start;
+    text-align: start;
+    
 }
 
 .subscribe__mode {  
@@ -225,7 +227,7 @@
     
   }
   @media screen and (min-width: 1200px){  
-   
+   flex-direction: row;
 align-items: start;}
 }
 

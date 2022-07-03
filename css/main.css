@@ -583,10 +583,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--background-color);
-  text-align: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  text-align: start;
+}
+@media screen and (max-width: 1198px) {
+  .subscribe__text {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe__text {
@@ -609,6 +611,10 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .subscribe__mode {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
