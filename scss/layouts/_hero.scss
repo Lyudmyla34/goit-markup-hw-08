@@ -36,11 +36,12 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and(max-width:480px){
+  @media screen and(min-width:320px){
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/img/Header-img480.jpg),
     url(../images/img/Header-img480@2x.jpg);
   background-position: center;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+  background-size: cover;}
   @media screen and(min-width:481px) {
     background-image: url(..//images/img/Header-img768.jpg), url(../images/img/Header-img768@2x.jpg);
     background-repeat: no-repeat;
