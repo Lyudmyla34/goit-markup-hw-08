@@ -140,26 +140,30 @@
           <h2 class="heading">Чем мы занимаемся</h2>
           <ul class="product">
             <li class="product__list">
-              <img class="product__img"
-              srcset="./images/img/desctop-img.jpg 1200w, ./images/img/desctop-img@2x.jpg 1200w"
-              sizes="(min-width: 1200px) 300px, 100vw"
-              src="./images/img.jpg" alt="Набор текста на компе" width="370">               
+              <picture>
+                <source srcset="./images/img/desctop-img.jpg  1x, 
+                ./images/img/desctop-img@2x.jpg  2x" media="(min-width:1200px)"/>
+              <img class="product__img"              
+              src="./images/img.jpg" alt="Набор текста на компе" width="370"> 
+              </picture>              
               <p class="product__text">Десктопные приложения</p>
             </li>
             <li class="product__list">
-              <img class="product__img" 
-               srcset="./images/img/mobile-img.jpg 1600w, 
-              ./images/img/mobile-img@2x.jpg 1600w "
-               src="./images/img-1.jpg" alt="Связь телефона с комп" width="370"
-               sizes="(min-width: 1200) 33vw, 100vw" />
+              <picture>
+                <source srcset="./images/img/mobile-img.jpg  1x, 
+                ./images/img/mobile-img@2x.jpg  2x" media="(min-width:1200px)"/>
+              <img class="product__img"               
+               src="./images/img-1.jpg" alt="Связь телефона с комп" width="370">
+               </picture>
               <p class="product__text">Мобильные приложения</p>
             </li>
             <li class="product__list">
-              <img class="product__img"
-              srcset="./images/img/disaine-img.jpg 1600w, 
-              ./images/img/disaine-img@2x.jpg 1600w "
-               src="./images/img-2.jpg" alt="связь с планшетом" width="370"
-               sizes="(min-width: 1200) 33vw, 100vw" />
+              <picture>
+                <source srcset="./images/img/disaine-img.jpg  1x, 
+                ./images/img/disaine-img@2x.jpg  2x" media="(min-width:1200px)"/>
+              <img class="product__img"             
+               src="./images/img-2.jpg" alt="связь с планшетом" width="370">
+               </picture>
               <p class="product__text">Дизайнерские решения</p>
             </li>
           </ul>
