@@ -811,6 +811,12 @@ body {
   }
 }
 
+.menu-toggle.js-close-menu {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+}
+
 .btn-mobail__close .btn-mobail__menu {
   fill: var(--primary-text-color);
 }
@@ -823,6 +829,7 @@ body {
 
 .menu-container {
   position: absolute;
+  padding: 48px 40px;
   top: 0;
   width: 100%;
   height: 100%;
