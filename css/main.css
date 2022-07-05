@@ -837,7 +837,7 @@ body {
   padding: 48px 40px;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,7 +869,7 @@ body {
   margin: 0;
 }
 
-.mobail-menu__item {
+.mobail-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -901,7 +901,7 @@ body {
 }
 
 .contact-menu {
-  margin-bottom: 0;
+  margin-top: 100%;
 }
 
 .contact-menu__item:not(:last-child) {
