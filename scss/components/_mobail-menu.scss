@@ -2,7 +2,7 @@
   position: absolute;
   display: inline-flex;
   margin: 0;
-  padding: 0;
+  padding: 12px 8px;
   right: 0;
   background-color: var(--background-color);
   border: none;
@@ -24,6 +24,11 @@
   @media screen and(min-width:768px) {
     display: none;
   }
+}
+.menu-toggle.js-open-menu{
+  top: 15px;
+  right: 15px;
+
 }
 .menu-toggle.js-close-menu{
   position: absolute;
