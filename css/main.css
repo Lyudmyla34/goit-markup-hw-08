@@ -292,7 +292,7 @@ body {
 .modal {
   padding: 40px;
   position: absolute;
-  width: 450px;
+  max-width: 450px;
   height: 609px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -978,6 +978,10 @@ body {
   visibility: hidden;
 }
 
+.contact__container {
+  margin-top: auto;
+}
+
 .header-container {
   position: relative;
 }
@@ -1384,7 +1388,8 @@ body {
 }
 @media screen and (min-width: 481px) {
   .section--background {
-    background-image: url(..//images/img/Header-img768.jpg), url(../images/img/Header-img768@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/img/Header-img768.jpg), url(../images/img/Header-img768@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/img/Header-img768.jpg), url(../images/img/Header-img768@2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1395,8 +1400,10 @@ body {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(..//images/img/Header-img1600.jpg);
-    background-image: url(../images/img/Header-img1600@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/img/Header-img1600.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/img/Header-img1600.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img/Header-img1600@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img/Header-img1600@2x.jpg);
     background-position: center;
   }
 }

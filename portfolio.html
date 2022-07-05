@@ -12,24 +12,21 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.min.css" />
 </head>
+
 <body>
   <!-- Шапка сторінки-->
   <header class="header header-line">
     <div class="container header-container">
       <nav class="navigation">
         <a class="logo logo__head link" href="./index.html" lang="en">Web<span class="logo__accent">Studio</span></a>
-        <button type="button" 
-       class="menu-toggle js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu">
-          <svg width="24" height="16" 
-          aria-label="Переключатель мобильного меню">            
-             <use class="btn-mobail__menu" href="./images/symbol-d.svg#icon-menu_24px"></use>
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+            <use class="btn-mobail__menu" href="./images/symbol-d.svg#icon-menu_24px"></use>
           </svg>
-        </button>      
+        </button>
         <ul class="list navigation__item">
           <li class="navigation__list">
             <a class="navigation__studio--noaccent link" href="./index.html">Студия</a>
@@ -61,26 +58,34 @@
       </ul>
     </div>
     <div class="menu-container  js-menu-container" id="mobile-menu">
-        <button type="button" class="menu-toggle js-close-menu">       
-          <svg width="18.67" height="18.67" aria-label="Переключатель мобильного меню">            
-             <use  class="btn-mobail__close" href="./images/symbol-d.svg#icon-close_24px"></use>             
-          </svg>
-        </button>      
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg width="18.67" height="18.67" aria-label="Переключатель мобильного меню">
+          <use class="btn-mobail__close" href="./images/symbol-d.svg#icon-close_24px"></use>
+        </svg>
+      </button>
       <ul class="mobail-menu__nav">
         <li class="mobail-menu__item list"> <a href="./index.html" class="mobail-menu__link link">Студия</a></li>
-        <li class="mobail-menu__item list"> <a href="./portfolio.html" class="mobail-menu__link--accent link">Портфолио</a></li>
+        <li class="mobail-menu__item list"> <a href="./portfolio.html"
+            class="mobail-menu__link--accent link">Портфолио</a></li>
         <li class="mobail-menu__item list"> <a href="" class="mobail-menu__link link">Контакты</a></li>
       </ul>
+      <div class="contact__container">
       <ul class="contact-menu">
-        <li class="contact-menu__item list"> <a href="tel:+380961111111" class="contact-menu__link link">+38 096 111 11 11</a></li>
-        <li class="contact-menu__item list"> <a href="mailto:info@devstudio.com" class="contact-menu__link-mail link">info@devstudio.com</a></li>        
+        <li class="contact-menu__item list"> <a href="tel:+380961111111" class="contact-menu__link link">+38 096 111 11
+            11</a></li>
+        <li class="contact-menu__item list"> <a href="mailto:info@devstudio.com"
+            class="contact-menu__link-mail link">info@devstudio.com</a></li>
       </ul>
       <ul class="social-menu">
-        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Instagram </a> <span class="social-menu__point">|</span></li>
-        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Twitter</a> <span class="social-menu__point">|</span></li>
-        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Facebook</a> <span class="social-menu__point">|</span></li>
-         <li class="social-menu__item list"> <a href="" class="social-menu__link link">LinkedIn</a></li>
+        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Instagram </a> <span
+            class="social-menu__point">|</span></li>
+        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Twitter</a> <span
+            class="social-menu__point">|</span></li>
+        <li class="social-menu__item list"> <a href="" class="social-menu__link link">Facebook</a> <span
+            class="social-menu__point">|</span></li>
+        <li class="social-menu__item list"> <a href="" class="social-menu__link link">LinkedIn</a></li>
       </ul>
+    </div>
     </div>
   </header>
   <!--Герой-->
@@ -113,13 +118,13 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/Tehnokryak-img1600.jpg  1x, 
-                  ./images/img/Tehnokryak-img1600@2x.jpg 2x" media="(min-width:1200px)"/>
+                  ./images/img/Tehnokryak-img1600@2x.jpg 2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/Tehnokryak-img768.jpg  1x, 
-                  ./images/img/Tehnokryak-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/Tehnokryak-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/Tehnokryak-img480.jpg  1x, 
-                  ./images/img/Tehnokryak-img480@2x.jpg  2x" media="(min-width:320px)"/>     
-                <img class="services-card__img"                
-               src="./images/img.portfolio/Технокряк.jpg" alt="Технокряк" width="450"> 
+                  ./images/img/Tehnokryak-img480@2x.jpg  2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/Технокряк.jpg" alt="Технокряк"
+                    width="450">
                 </picture>
                 <div class="services-overlay">
                   <p>
@@ -141,14 +146,14 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/Orlean-img1600.jpg  1x, 
-                  ./images/img/Orlean-img1600@2x.jpg 2x" media="(min-width:1200px)"/>
+                  ./images/img/Orlean-img1600@2x.jpg 2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/Orlean-img768.jpg  1x, 
-                  ./images/img/Orlean-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/Orlean-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/Orlean-img480.jpg  1x, 
-                  ./images/img/Orlean-img480@2x.jpg  2x" media="(min-width:320px)"/>     
-                <img class="services-card__img"                
-               src="./images/img.portfolio/ПостерNewOrlea.jpg" alt="Постер New Orlean vs Golden Star" width="450">
-              </picture>
+                  ./images/img/Orlean-img480@2x.jpg  2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/ПостерNewOrlea.jpg"
+                    alt="Постер New Orlean vs Golden Star" width="450">
+                </picture>
                 <div class="services-overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -171,13 +176,12 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/Seafood-img1600.jpg  1x, 
-                  ./images/img/Seafood-img1600@2x.jpg 2x" media="(min-width:1200px)"/>
+                  ./images/img/Seafood-img1600@2x.jpg 2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/Seafood-img768.jpg  1x, 
-                  ./images/img/Seafood-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/Seafood-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/Seafood-img480.jpg  1x, 
-                  ./images/img/Seafood-img480@2x.jpg 2x" media="(min-width:320px)"/>  
-                <img class="services-card__img"               
-              src="./images/img.portfolio/РесторанSeafood.jpg" alt="Ресторан
+                  ./images/img/Seafood-img480@2x.jpg 2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/РесторанSeafood.jpg" alt="Ресторан
             Seafood" width="450">
                 </picture>
                 <div class="services-overlay">
@@ -202,13 +206,13 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/Prime-img1600.jpg  1x, 
-                  ./images/img/Prime-img1600@2x.jpg 2x" media="(min-width:1200px)"/>
+                  ./images/img/Prime-img1600@2x.jpg 2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/Prime-img768.jpg  1x, 
-                  ./images/img/Prime-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/Prime-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/Prime-img480.jpg  1x, 
-                  ./images/img/Prime-img480@2x.jpg  2x" media="(min-width:320px)"/> 
-                <img class="services-card__img"                
-              src="./images/img.portfolio/ПроектPrime.jpg" alt="Проект Prime" width="450">
+                  ./images/img/Prime-img480@2x.jpg  2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/ПроектPrime.jpg" alt="Проект Prime"
+                    width="450">
                 </picture>
                 <div class="services-overlay">
                   <p>
@@ -232,13 +236,13 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/Boxes-img1600.jpg  1x, 
-                  ./images/img/Boxes-img1600@2x.jpg  2x" media="(min-width:1200px)"/>
+                  ./images/img/Boxes-img1600@2x.jpg  2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/Boxes-img768.jpg  1x, 
-                  ./images/img/Boxes-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/Boxes-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/Boxes-img480.jpg  1x, 
-                  ./images/img/Boxes-img480@2x.jpg  2x" media="(min-width:320px)"/> 
-                <img class="services-card__img"                
-              src="./images/img.portfolio/ПроектBoxes.jpg" alt="Проект Boxes" width="450">
+                  ./images/img/Boxes-img480@2x.jpg  2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/ПроектBoxes.jpg" alt="Проект Boxes"
+                    width="450">
                 </picture>
                 <div class="services-overlay">
                   <p>
@@ -262,14 +266,13 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/Borders-img1600.jpg  1x, 
-                  ./images/img/Borders-img1600@2x.jpg  2x" media="(min-width:1200px)"/>
+                  ./images/img/Borders-img1600@2x.jpg  2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/Borders-img768.jpg  1x, 
-                  ./images/img/Borders-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/Borders-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/Borders-img480.jpg  1x, 
-                  ./images/img/Borders-img480@2x.jpg  2x" media="(min-width:320px)"/> 
-                <img class="services-card__img"               
-              src="./images/img.portfolio/InspirationhasnoBorders.jpg" alt="Inspiration has no Borders"
-                  width="450" > 
+                  ./images/img/Borders-img480@2x.jpg  2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/InspirationhasnoBorders.jpg"
+                    alt="Inspiration has no Borders" width="450">
                 </picture>
                 <div class="services-overlay">
                   <p>
@@ -293,14 +296,14 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/Edition-img1600.jpg  1x, 
-                  ./images/img/Edition-img1600@2x.jpg  2x" media="(min-width:1200px)"/>
+                  ./images/img/Edition-img1600@2x.jpg  2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/Edition-img768.jpg  1x, 
-                  ./images/img/Edition-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/Edition-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/Edition-img480.jpg  1x, 
-                  ./images/img/Edition-img480@2x.jpg  2x" media="(min-width:320px)"/> 
-                <img class="services-card__img"                
-               src="./images/img.portfolio/ИзданиеLimitedEdition.jpg" alt="Издание Limited Edition" width="450">
-                   </picture>
+                  ./images/img/Edition-img480@2x.jpg  2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/ИзданиеLimitedEdition.jpg"
+                    alt="Издание Limited Edition" width="450">
+                </picture>
                 <div class="services-overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -323,14 +326,14 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/LAB-img1600.jpg  1x, 
-                  ./images/img/LAB-img1600@2x.jpg  2x" media="(min-width:1200px)"/>
+                  ./images/img/LAB-img1600@2x.jpg  2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/LAB-img768.jpg  1x, 
-                  ./images/img/LAB-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/LAB-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/LAB-img480.jpg  1x, 
-                  ./images/img/LAB-img480@2x.jpg  2x" media="(min-width:320px)"/> 
-                <img class="services-card__img"                
-               src="./images/img.portfolio/ПроектLAB.jpg" alt="Проект LAB" width="450" >
-               </picture>
+                  ./images/img/LAB-img480@2x.jpg  2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/ПроектLAB.jpg" alt="Проект LAB"
+                    width="450">
+                </picture>
                 <div class="services-overlay">
                   <p>
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -353,15 +356,14 @@
               <div class="overlay">
                 <picture>
                   <source srcset="./images/img/Business-img1600.jpg  1x, 
-                  ./images/img/Business-img1600@2x.jpg  2x" media="(min-width:1200px)"/>
+                  ./images/img/Business-img1600@2x.jpg  2x" media="(min-width:1200px)" />
                   <source srcset="./images/img/Business-img768.jpg 1x, 
-                  ./images/img/Business-img768@2x.jpg  2x" media="(min-width:768px)"/>
+                  ./images/img/Business-img768@2x.jpg  2x" media="(min-width:768px)" />
                   <source srcset="./images/img/Business-img480.jpg  1x, 
-                  ./images/img/Business-img480@2x.jpg  2x" media="(min-width:320px)"/> 
-                <img class="services-card__img"                 
-              src="./images/img.portfolio/GrowingBusiness.jpg" alt="Growing
+                  ./images/img/Business-img480@2x.jpg  2x" media="(min-width:320px)" />
+                  <img class="services-card__img" src="./images/img.portfolio/GrowingBusiness.jpg" alt="Growing
             Business" width="450" />
-            </picture>
+                </picture>
                 <div class="services-overlay">
                   <p class="overlay-p">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -387,70 +389,71 @@
   <footer class="page-footer">
     <div class="container page-footer__container">
       <div class="page-footer__tablet">
-      <div class="page-footer__pane">
-        <a class="logo logo__bottom link" href="./index.html" lang="en">Web<span class="logo logo__bottom--accent">Studio</span></a>
-        <address class="page-footer-address">
-          <ul class="page-footer-address__list">
-            <li class="page-footer-address__name">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="page-footer-address__name">
-              <a class="page-footer-address__mail link" href="info@example.com">info@example.com</a>
+        <div class="page-footer__pane">
+          <a class="logo logo__bottom link" href="./index.html" lang="en">Web<span
+              class="logo logo__bottom--accent">Studio</span></a>
+          <address class="page-footer-address">
+            <ul class="page-footer-address__list">
+              <li class="page-footer-address__name">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="page-footer-address__name">
+                <a class="page-footer-address__mail link" href="info@example.com">info@example.com</a>
+              </li>
+              <li class="page-footer-address__name">
+                <a class="page-footer-address__phone link" href="+380991111111">+38(099)1111111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="accede">
+          <p class="accede__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="accede__social">
+            <li class="accede__list list">
+              <a class="accede__link" href="" target="_blank" aria-label="Instagram">
+                <svg class="accede__icon" width="20" height="20">
+                  <use href="./images/symbol-defs2.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
             </li>
-            <li class="page-footer-address__name">
-              <a class="page-footer-address__phone link" href="+380991111111">+38(099)1111111</a>
+            <li class="accede__list list">
+              <a class="accede__link" href="" target="_blank" aria-label="Twitter"><svg class="accede__icon" width="20"
+                  height="20">
+                  <use href="./images/symbol-defs2.svg#icon-twitter-1"></use>
+                </svg></a>
+            </li>
+            <li class="accede__list list">
+              <a class="accede__link" href="" target="_blank" aria-label="Fb">
+                <svg class="accede__icon" width="20" height="20">
+                  <use href="./images/symbol-defs2.svg#icon-facebook-1"></use>
+                </svg></a>
+            </li>
+            <li class="accede__list list">
+              <a class="accede__link" href="" target="_blank" aria-label="In"><svg class="accede__icon" width="20"
+                  height="20">
+                  <use href="./images/symbol-defs2.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="accede">
-        <p class="accede__text">ПРИСОЕДИНЯЙТЕСЬ</p>
-        <ul class="accede__social">
-          <li class="accede__list list">
-            <a class="accede__link" href="" target="_blank" aria-label="Instagram">
-              <svg class="accede__icon" width="20" height="20">
-                <use href="./images/symbol-defs2.svg#icon-instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="accede__list list">
-            <a class="accede__link" href="" target="_blank" aria-label="Twitter"
-              ><svg class="accede__icon" width="20" height="20">
-                <use href="./images/symbol-defs2.svg#icon-twitter-1"></use></svg></a>
-          </li>
-          <li class="accede__list list">
-            <a class="accede__link" href="" target="_blank" aria-label="Fb">
-              <svg class="accede__icon" width="20" height="20">
-                <use href="./images/symbol-defs2.svg#icon-facebook-1"></use></svg></a>
-          </li>
-          <li class="accede__list list">
-            <a class="accede__link" href="" target="_blank" aria-label="In"
-              ><svg class="accede__icon" width="20" height="20">
-                <use href="./images/symbol-defs2.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+        </div>
       </div>
       <div class="subscribe">
-      <p class="subscribe__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-      <form class="subscribe__mode">
-        <input class="subscribe__input" type="email" name="email-footer" placeholder="email" autocomplete="on" />
-        <button class="subscribe-buttons" type="submit">
-          Подписаться
-          <svg class="subscribe-buttons__icon" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-          </svg>
-        </button>
-      </form>
-    </div>
+        <p class="subscribe__text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+        <form class="subscribe__mode">
+          <input class="subscribe__input" type="email" name="email-footer" placeholder="email" autocomplete="on" />
+          <button class="subscribe-buttons" type="submit">
+            Подписаться
+            <svg class="subscribe-buttons__icon" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
-   <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/mobile-menu.js"></script>  
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
+
 </html>
