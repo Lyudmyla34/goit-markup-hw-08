@@ -474,7 +474,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .textarea-user {
-    width: 448px;
+    max-width: 448px;
   }
 }
 .textarea-user:focus, .textarea-user:hover {
